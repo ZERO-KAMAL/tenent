@@ -1,0 +1,185 @@
+@import "base";
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+// header
+// header
+#header.fixed-top {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    animation: mymove 1s;
+    @keyframes mymove {
+        0% {
+            top: -80px;
+        }
+        100% {
+            top: 0px;
+        }
+    }
+}
+#header {
+    box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.04);
+    .navbar-brand {
+        img {
+            width: 100%;
+            height: 60px;
+        }
+    }
+    .navbar-nav {
+        li {
+            a {
+                color: $color_black;
+                :hover {
+                    color: $color_green;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    @media only screen and (min-width: 991px) {
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+            .nav-item {
+                margin-left: 35px;
+            }
+            .store-link {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
+// header-end
+
+//main-banner
+#mainBanner {
+    position: relative;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/images/bgImage.jpg);
+    height: 320px;
+    .mainBanner__content {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h1 {
+            font-size: 48px;
+            line-height: 56px;
+            text-align: center;
+            color: $color_white;
+        }
+        .mainBanner__content-search {
+            margin-top: 50px;
+            .input-group {
+                border-radius: 5px;
+                height: 50px;
+            }
+        }
+    }
+    @media only screen and (min-width: 991px) {
+        height: 512px;
+    }
+    @media only screen and (min-width: 767px) {
+        .mainBanner__content-search {
+            .input-group {
+                width: 500px;
+            }
+        }
+    }
+}
+//main-banner-end
+
+//searchMap
+#searchMap {
+    .searchMap__inner {
+        background-color: $color_white;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        .searchMap__content {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            margin-bottom: 50px;
+        }
+    }
+}
+//searchMap-end
+
+//featureApartment
+#featureApartment {
+    .featureApartment__inner {
+        background-color: $color_white;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        .featureApartment__content {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            margin-bottom: 50px;
+        }
+        .featureApartment__image {
+            img {
+                object-fit: cover;
+                height: 100%;
+            }
+        }
+    }
+}
+//featureApartment-end
+
+//contactUs
+#contactUs {
+    h1 {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 47px;
+        text-align: center;
+        letter-spacing: 0.035em;
+        color: $color_black;
+        margin-bottom: 50px;
+    }
+
+    label {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+        color: rgba(0, 0, 0, 0.5);
+    }
+    input {
+        height: 76px !important;
+    }
+    input,
+    textarea {
+        border: 2.63286px solid rgba(0, 0, 0, 0.4) !important;
+        border-radius: 13.1643px !important;
+        &:focus {
+            outline: none;
+            box-shadow: none !important;
+        }
+        &:hover {
+            border: 2.63286px solid $color_green !important;
+        }
+    }
+}
+//contactUs-end
+
+//footer
+#footer {
+    background-color: $color_grey;
+    padding: 62px 0;
+    h3 {
+        color: $color_white;
+        font-size: 21.6px;
+        line-height: 26px;
+        font-family: "Inter", sans-serif;
+    }
+}
