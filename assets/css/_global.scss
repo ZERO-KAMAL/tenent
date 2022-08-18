@@ -160,7 +160,7 @@ button {
     width: fit-content;
     &:hover {
         background-color: $color_white;
-        color: $color_green;
+        color: $color_green !important;
         border: 1px solid $color_green;
     }
 }
