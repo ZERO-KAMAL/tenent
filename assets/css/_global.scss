@@ -135,7 +135,8 @@ button {
     background-color: white;
     box-shadow: none;
     &:focus {
-        outline: none;
+        outline: none !important;
+        box-shadow: none !important;
     }
 }
 .section__btn {
@@ -149,7 +150,7 @@ button {
 }
 .btn-primary {
     background-color: $color_green;
-    color: $color_white;
+    color: $color_white !important;
     border-radius: 5px;
     font-size: 18px;
     line-height: 21px;
