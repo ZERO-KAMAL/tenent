@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="assets/css/index.css" />
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- header -->
+    <section id="header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img src="assets/images/logo.svg" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="propertyList.html"
+                  >Property list</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact us</a>
+              </li>
+              <li class="nav-item store-link">
+                <a class="nav-link" href="#"
+                  ><img src="assets/images/playstore.svg" alt=""
+                /></a>
+                <a class="nav-link" href="#"
+                  ><img src="assets/images/appstore.svg" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- header-end -->
+
+    <!-- customizeRoomSearch -->
+    <section id="customizeRoomSearch">
+      <div class="container">
+        <div class="row">
+          <div
+            class="customizeRoomSearch__inner d-flex align-items-center justify-content-between flex-wrap"
+          >
+            <div class="customizeRoomSearch__inner-left d-flex align-items-center justify-content-start flex-wrap">
+              <div class="states-search">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>States</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="housing-search">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Housing</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="price-search">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Price</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="size-search">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Size (M²)</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="numOfRoom-search">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Number of room</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="search">
+                <div class="input-group">
+                  <input type="search" id="form1" class="form-control" />
+                  <button type="button" class="btn">
+                    <img src="assets/images/searchIcon.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="customizeRoomSearch__inner-right">
+              <button class="btn"><img src="assets/images/filter-button.svg" alt=""> </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- customizeRoomSearch-end -->
+
+    <div id="main_wrapper" class="section__padding-bottom">
+      <!-- roomList -->
+      <section id="roomList">
+        <div class="container">
+          <div
+            class="section__heading d-flex align-items-center justify-content-start flex-wrap"
+          >
+            <h4 class="section__title">Room for rent</h4>
+            <p class="section__sub-title">(32.564) results found.</p>
+
+            <div class="filterSort-select">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Smart Sorting</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+          <div class="roomList__inner">
+            <div class="row justify-content-center gx-lg-5 gx-2">
+              <div class="col-md-5 col-lg-3 mt-3">
+                <div class="card">
+                  <div class="card-box">
+                    <img
+                      src="assets/images/card-img.jpg"
+                      class="card-img"
+                      alt=""
+                    />
+                    <h1 class="card-price">700.00$</h1>
+                    <h5 class="card-title">House for rent</h5>
+                    <p class="card-para">
+                      lazimpat, kathmandu <br />
+                      26 November 2020
+                    </p>
+                    <ul class="card-feature-list">
+                      <li>
+                        <img src="assets/images/bed.svg" alt="" />
+                        <span>2</span>
+                      </li>
+                      <li>
+                        <img src="assets/images/washroom.svg" alt="" />
+                        <span>1</span>
+                      </li>
+                      <li>
+                        <img src="assets/images/car.svg" alt="" />
+                        <span>3</span>
+                      </li>
+                      <li>
+                        <img src="assets/images/length.svg" alt="" />
+                        <span>40m <sup>2</sup></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 col-lg-3 mt-3">
+                <div class="card">
+                  <div class="card-box">
+                    <img
+                      src="assets/images/card-img.jpg"
+                      class="card-img"
+                      alt=""
+                    />
+                    <h1 class="card-price">700.00$</h1>
+                    <h5 class="card-title">House for rent</h5>
+                    <p class="card-para">
+                      lazimpat, kathmandu <br />
+                      26 November 2020
+                    </p>
+                    <ul class="card-feature-list">
+                      <li>
+                        <img src="assets/images/bed.svg" alt="" />
+                        <span>2</span>
+                      </li>
+                      <li>
+                        <img src="assets/images/washroom.svg" alt="" />
+                        <span>1</span>
+                      </li>
+                      <li>
+                        <img src="assets/images/car.svg" alt="" />
+                        <span>3</span>
+                      </li>
+                      <li>
+                        <img src="assets/images/length.svg" alt="" />
+                        <span>40m <sup>2</sup></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 col-lg-3 mt-3">
+                <div class="card">
+                  <div class="card-box">
+                    <img
+                      src="assets/images/card-img.jpg"
+                      class="card-img"
+                      alt=""
+                    />
+                    <h1 class="card-price">700.00$</h1>
+                    <h5 class="card-title">House for rent</h5>
+                    <p class="card-para">
+                      lazimpat, kathmandu <br />
+                      26 November 2020
+                    </p>
+                    <ul class="card-feature-list">
+                      <li>
+                        <img src="assets/images/bed.svg" alt="" />
+                        <span>2</span>
+                      </li>
+                      <li>
+                        <img src="assets/images/washroom.svg" alt="" />
+                        <span>1</span>
+                      </li>
+                      <li>
+                        <img src="assets/images/car.svg" alt="" />
+                        <span>3</span>
+                      </li>
+                      <li>
+                        <img src="assets/images/length.svg" alt="" />
+                        <span>40m <sup>2</sup></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 col-lg-3 mt-3">
+                <div class="card">
+                  <div class="card-box">
+                    <img
+                      src="assets/images/card-img.jpg"
+                      class="card-img"
+                      alt=""
+                    />
+                    <h1 class="card-price">700.00$</h1>
+                    <h5 class="card-title">House for rent</h5>
+                    <p class="card-para">
+                      lazimpat, kathmandu <br />
+                      26 November 2020
+                    </p>
+                    <ul class="card-feature-list">
+                      <li>
+                        <img src="assets/images/bed.svg" alt="" />
+                        <span>2</span>
+                      </li>
+                      <li>
+                        <img src="assets/images/washroom.svg" alt="" />
+                        <span>1</span>
+                      </li>
+                      <li>
+                        <img src="assets/images/car.svg" alt="" />
+                        <span>3</span>
+                      </li>
+                      <li>
+                        <img src="assets/images/length.svg" alt="" />
+                        <span>40m <sup>2</sup></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 col-lg-3 mt-3">
+                <div class="card">
+                  <div class="card-box">
+                    <img
+                      src="assets/images/card-img.jpg"
+                      class="card-img"
+                      alt=""
+                    />
+                    <h1 class="card-price">700.00$</h1>
+                    <h5 class="card-title">House for rent</h5>
+                    <p class="card-para">
+                      lazimpat, kathmandu <br />
+                      26 November 2020
+                    </p>
+                    <ul class="card-feature-list">
+                      <li>
+                        <img src="assets/images/bed.svg" alt="" />
+                        <span>2</span>
+                      </li>
+                      <li>
+                        <img src="assets/images/washroom.svg" alt="" />
+                        <span>1</span>
+                      </li>
+                      <li>
+                        <img src="assets/images/car.svg" alt="" />
+                        <span>3</span>
+                      </li>
+                      <li>
+                        <img src="assets/images/length.svg" alt="" />
+                        <span>40m <sup>2</sup></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 col-lg-3 mt-3">
+                <div class="card">
+                  <div class="card-box">
+                    <img
+                      src="assets/images/card-img.jpg"
+                      class="card-img"
+                      alt=""
+                    />
+                    <h1 class="card-price">700.00$</h1>
+                    <h5 class="card-title">House for rent</h5>
+                    <p class="card-para">
+                      lazimpat, kathmandu <br />
+                      26 November 2020
+                    </p>
+                    <ul class="card-feature-list">
+                      <li>
+                        <img src="assets/images/bed.svg" alt="" />
+                        <span>2</span>
+                      </li>
+                      <li>
+                        <img src="assets/images/washroom.svg" alt="" />
+                        <span>1</span>
+                      </li>
+                      <li>
+                        <img src="assets/images/car.svg" alt="" />
+                        <span>3</span>
+                      </li>
+                      <li>
+                        <img src="assets/images/length.svg" alt="" />
+                        <span>40m <sup>2</sup></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 col-lg-3 mt-3">
+                <div class="card">
+                  <div class="card-box">
+                    <img
+                      src="assets/images/card-img.jpg"
+                      class="card-img"
+                      alt=""
+                    />
+                    <h1 class="card-price">700.00$</h1>
+                    <h5 class="card-title">House for rent</h5>
+                    <p class="card-para">
+                      lazimpat, kathmandu <br />
+                      26 November 2020
+                    </p>
+                    <ul class="card-feature-list">
+                      <li>
+                        <img src="assets/images/bed.svg" alt="" />
+                        <span>2</span>
+                      </li>
+                      <li>
+                        <img src="assets/images/washroom.svg" alt="" />
+                        <span>1</span>
+                      </li>
+                      <li>
+                        <img src="assets/images/car.svg" alt="" />
+                        <span>3</span>
+                      </li>
+                      <li>
+                        <img src="assets/images/length.svg" alt="" />
+                        <span>40m <sup>2</sup></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 col-lg-3 mt-3">
+                <div class="card">
+                  <div class="card-box">
+                    <img
+                      src="assets/images/card-img.jpg"
+                      class="card-img"
+                      alt=""
+                    />
+                    <h1 class="card-price">700.00$</h1>
+                    <h5 class="card-title">House for rent</h5>
+                    <p class="card-para">
+                      lazimpat, kathmandu <br />
+                      26 November 2020
+                    </p>
+                    <ul class="card-feature-list">
+                      <li>
+                        <img src="assets/images/bed.svg" alt="" />
+                        <span>2</span>
+                      </li>
+                      <li>
+                        <img src="assets/images/washroom.svg" alt="" />
+                        <span>1</span>
+                      </li>
+                      <li>
+                        <img src="assets/images/car.svg" alt="" />
+                        <span>3</span>
+                      </li>
+                      <li>
+                        <img src="assets/images/length.svg" alt="" />
+                        <span>40m <sup>2</sup></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 col-lg-3 mt-3">
+                <div class="card">
+                  <div class="card-box">
+                    <img
+                      src="assets/images/card-img.jpg"
+                      class="card-img"
+                      alt=""
+                    />
+                    <h1 class="card-price">700.00$</h1>
+                    <h5 class="card-title">House for rent</h5>
+                    <p class="card-para">
+                      lazimpat, kathmandu <br />
+                      26 November 2020
+                    </p>
+                    <ul class="card-feature-list">
+                      <li>
+                        <img src="assets/images/bed.svg" alt="" />
+                        <span>2</span>
+                      </li>
+                      <li>
+                        <img src="assets/images/washroom.svg" alt="" />
+                        <span>1</span>
+                      </li>
+                      <li>
+                        <img src="assets/images/car.svg" alt="" />
+                        <span>3</span>
+                      </li>
+                      <li>
+                        <img src="assets/images/length.svg" alt="" />
+                        <span>40m <sup>2</sup></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 col-lg-3 mt-3">
+                <div class="card">
+                  <div class="card-box">
+                    <img
+                      src="assets/images/card-img.jpg"
+                      class="card-img"
+                      alt=""
+                    />
+                    <h1 class="card-price">700.00$</h1>
+                    <h5 class="card-title">House for rent</h5>
+                    <p class="card-para">
+                      lazimpat, kathmandu <br />
+                      26 November 2020
+                    </p>
+                    <ul class="card-feature-list">
+                      <li>
+                        <img src="assets/images/bed.svg" alt="" />
+                        <span>2</span>
+                      </li>
+                      <li>
+                        <img src="assets/images/washroom.svg" alt="" />
+                        <span>1</span>
+                      </li>
+                      <li>
+                        <img src="assets/images/car.svg" alt="" />
+                        <span>3</span>
+                      </li>
+                      <li>
+                        <img src="assets/images/length.svg" alt="" />
+                        <span>40m <sup>2</sup></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 col-lg-3 mt-3">
+                <div class="card">
+                  <div class="card-box">
+                    <img
+                      src="assets/images/card-img.jpg"
+                      class="card-img"
+                      alt=""
+                    />
+                    <h1 class="card-price">700.00$</h1>
+                    <h5 class="card-title">House for rent</h5>
+                    <p class="card-para">
+                      lazimpat, kathmandu <br />
+                      26 November 2020
+                    </p>
+                    <ul class="card-feature-list">
+                      <li>
+                        <img src="assets/images/bed.svg" alt="" />
+                        <span>2</span>
+                      </li>
+                      <li>
+                        <img src="assets/images/washroom.svg" alt="" />
+                        <span>1</span>
+                      </li>
+                      <li>
+                        <img src="assets/images/car.svg" alt="" />
+                        <span>3</span>
+                      </li>
+                      <li>
+                        <img src="assets/images/length.svg" alt="" />
+                        <span>40m <sup>2</sup></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 col-lg-3 mt-3">
+                <div class="card">
+                  <div class="card-box">
+                    <img
+                      src="assets/images/card-img.jpg"
+                      class="card-img"
+                      alt=""
+                    />
+                    <h1 class="card-price">700.00$</h1>
+                    <h5 class="card-title">House for rent</h5>
+                    <p class="card-para">
+                      lazimpat, kathmandu <br />
+                      26 November 2020
+                    </p>
+                    <ul class="card-feature-list">
+                      <li>
+                        <img src="assets/images/bed.svg" alt="" />
+                        <span>2</span>
+                      </li>
+                      <li>
+                        <img src="assets/images/washroom.svg" alt="" />
+                        <span>1</span>
+                      </li>
+                      <li>
+                        <img src="assets/images/car.svg" alt="" />
+                        <span>3</span>
+                      </li>
+                      <li>
+                        <img src="assets/images/length.svg" alt="" />
+                        <span>40m <sup>2</sup></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- roomList-end -->
+    </div>
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3>Copyright© 2022 Tenant app, All rights reserved.</h3>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer-end -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

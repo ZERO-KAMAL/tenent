@@ -14,6 +14,13 @@ body {
     background-color: $bg_color;
     position: relative;
 }
+select,
+input,
+textarea {
+    &:focus {
+        box-shadow: none !important;
+    }
+}
 p {
     color: $light_black;
 }
@@ -44,11 +51,27 @@ img {
         padding-top: 120px;
     }
 }
+.section__padding-bottom {
+    padding-bottom: 40px;
+    @media only screen and (min-width: 991px) {
+        padding-bottom: 120px;
+    }
+}
+.main__title {
+    font-size: 28px;
+    line-height: 33px;
+    color: $color_black;
+    margin-bottom: 64px;
+}
 .section__title {
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
     color: $color_black;
+}
+.section__sub-title {
+    margin-bottom: 0%;
+    margin-left: 20px;
 }
 
 //card
@@ -101,6 +124,11 @@ img {
 }
 
 //button
+button {
+    &:focus {
+        box-shadow: none !important;
+    }
+}
 .btn {
     background-color: white;
     box-shadow: none;
@@ -126,6 +154,7 @@ img {
     padding: 14px 32px;
     transition: all 0.3s ease-in-out;
     border: 1px solid transparent;
+    width: fit-content;
     &:hover {
         background-color: $color_white;
         color: $color_green;
@@ -159,4 +188,11 @@ img {
     height: 86.88px;
     font-size: 32px;
     line-height: 38px;
+}
+
+.main-box {
+    background-color: $color_white;
+    padding: 24px 0px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 28px;
 }
