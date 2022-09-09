@@ -5,3 +5,5 @@ $(window).scroll(function () {
     $("#header").removeClass("fixed-top");
   }
 });
+
+AOS.init();

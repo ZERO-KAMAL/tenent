@@ -196,6 +196,16 @@
             padding: 20px 10px;
         }
     }
+    @media screen and (max-width: 1199px) {
+        .states-search,
+        .housing-search,
+        .price-search,
+        .size-search,
+        .numOfRoom-search,
+        .search {
+            margin-top: 15px;
+        }
+    }
 }
 //customizeRoomSearch-end
 
@@ -394,6 +404,19 @@
 }
 //contactUs-end
 
+#success-msg {
+    .success-img {
+        width: 100%;
+        height: 100%;
+    }
+    @media screen and (min-width: 767px) {
+        .success-img {
+            width: 250px;
+            height: 250px;
+        }
+    }
+}
+
 //footer
 #footer {
     background-color: $color_grey;
@@ -403,5 +426,35 @@
         font-size: 21.6px;
         line-height: 26px;
         font-family: "Inter", sans-serif;
+    }
+    .footer_menu {
+        ul {
+            li {
+                margin-left: 20px;
+                a {
+                    font-weight: 400;
+                    font-size: 21.6px;
+                    line-height: 26px;
+                    color: $color_white !important;
+                    transition: all 0.3s ease-in-out;
+                    text-transform: capitalize;
+                    &:hover {
+                        color: $light_black !important;
+                    }
+                }
+            }
+            li::first-child {
+                margin-left: 0px !important;
+            }
+        }
+        @media screen and (max-width:767px) {
+            ul{
+                justify-content: center;
+                li{
+                    margin-top: 1rem;
+                }
+            }
+            
+        }
     }
 }

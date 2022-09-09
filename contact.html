@@ -128,7 +128,56 @@
                         <label for="floatingTextarea2">Message</label>
                       </div>
                     </div>
-                    <button class="btn-primary btn-send">Send</button>
+                    <button
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                      class="btn-primary btn-send"
+                    >
+                      Send
+                    </button>
+                    <!-- success-message -->
+                    <div
+                      class="modal fade"
+                      id="exampleModal"
+                      tabindex="-1"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            <div id="success-msg">
+                              <div class="container">
+                                <div class="row d-flex align-items-center justify-content-center">
+                                  <div class="col-md-7 d-flex align-items-center flex-column">
+                                    <img
+                                      src="assets/images/tick.svg"
+                                      alt=""
+                                      width="100%"
+                                      height="100%" 
+                                      class="success-img"
+                                    />
+                                    <h1 class="mt-4 mb-4">we will get back to you within 24 hours!</h1>
+                                    <button class="btn-primary mt-lg-4 mt-md-4 mt-2">Okey</button>
+                                    <button class="btn-primary mt-lg-4 mt-md-4 mt-2 mb-lg-4 mb-md-4 mt-2">Application Form</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                     <!-- success-message-end -->
                   </div>
                 </form>
               </div>
@@ -138,12 +187,22 @@
       </section>
     </div>
 
+  
     <!-- footer -->
     <footer id="footer">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 text-center">
-            <h3>Copyright© 2022 Tenant app, All rights reserved.</h3>
+          <div class="col-md-6 text-center text-md-start text-lg-start text-xl-start text-xxl-start">
+            <h3>Copyright© 2022 TBD app, All rights reserved.</h3>
+          </div>
+          <div class="col-md-6 text-center text-md-start text-lg-start text-xl-start text-xxl-start">
+             <div class="footer_menu">
+              <ul class="d-flex align-items-center flex-wrap">
+                <li><a href="">Terms and Conditions</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Help and Supports</a></li>
+              </ul>
+             </div>
           </div>
         </div>
       </div>

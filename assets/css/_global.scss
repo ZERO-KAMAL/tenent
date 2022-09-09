@@ -10,10 +10,25 @@ body {
     font-weight: 400;
     font-size: 0.875rem;
     line-height: 1rem;
-    overflow-x: hidden;
+    // overflow-x: hidden;
+    // overflow-y: scroll;
     background-color: $bg_color;
     position: relative;
+    height: auto;
 }
+body::-webkit-scrollbar {
+    width: .75rem;
+    z-index: 9999999;
+    &-track {
+        background: #f1f1f1;
+      }
+    &-thumb {
+        background-color: $color_grey;
+        outline: 1px solid transparent;
+        border-radius: 5px;
+    }
+}
+
 select,
 input,
 textarea {
@@ -28,7 +43,6 @@ a {
     text-decoration: none;
     transition: all 0.3s ease-in-out;
     color: inherit !important;
-
 }
 ul {
     margin: 0;
@@ -80,6 +94,11 @@ img {
 .card {
     padding: 10px;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        transform: translateY(-5px);
+    }
     .card-box {
         .card-img {
             width: 100%;
@@ -198,4 +217,20 @@ button {
     padding: 24px 0px;
     border: 2px solid rgba(0, 0, 0, 0.1);
     margin-bottom: 28px;
+}
+
+.pagination {
+    .page-item {
+        margin-left: 8px;
+    }
+    .page-item.active .page-link {
+        background-color: $color_green !important;
+    }
+    .page-link {
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        &:focus {
+            box-shadow: none;
+            outline: none;
+        }
+    }
 }
