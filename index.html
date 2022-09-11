@@ -12,6 +12,12 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="assets/css/index.css" />
@@ -93,172 +99,218 @@
             <h4 class="section__title">Rooms available</h4>
             <button class="btn section__btn">All</button>
           </div>
-          <div class="roomList__inner">
-            <div class="row justify-content-center gx-lg-5 gx-2">
-              <div
-                class="col-md-5 col-lg-3 mt-3"
-                data-aos="fade-up"
-                data-aos-duration="1500"
-              >
-                <a href="propetyDetails.html">
-                  <div class="card">
-                    <div class="card-box">
-                      <img
-                        src="assets/images/card-img.jpg"
-                        class="card-img"
-                        alt=""
-                      />
-                      <h1 class="card-price">700.00$</h1>
-                      <h5 class="card-title">House for rent</h5>
-                      <p class="card-para">
-                        lazimpat, kathmandu <br />
-                        26 November 2020
-                      </p>
-                      <ul class="card-feature-list">
-                        <li>
-                          <img src="assets/images/bed.svg" alt="" />
-                          <span>2</span>
-                        </li>
-                        <li>
-                          <img src="assets/images/washroom.svg" alt="" />
-                          <span>1</span>
-                        </li>
-                        <li>
-                          <img src="assets/images/car.svg" alt="" />
-                          <span>3</span>
-                        </li>
-                        <li>
-                          <img src="assets/images/length.svg" alt="" />
-                          <span>40m <sup>2</sup></span>
-                        </li>
-                      </ul>
+          <div class="roomList__inner mt-3">
+            <div class="swiper mySwiper swiper-main">
+              <div class="swiper-wrapper h-100">
+                <div
+                  class="swiper-slide"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                >
+                  <a href="propetyDetails.html">
+                    <div class="card">
+                      <div class="card-box">
+                        <img
+                          src="assets/images/card-img.jpg"
+                          class="card-img"
+                          alt=""
+                        />
+                        <h1 class="card-price">700.00$</h1>
+                        <h5 class="card-title">House for rent</h5>
+                        <p class="card-para">
+                          lazimpat, kathmandu <br />
+                          26 November 2020
+                        </p>
+                        <ul class="card-feature-list">
+                          <li>
+                            <img src="assets/images/bed.svg" alt="" />
+                            <span>2</span>
+                          </li>
+                          <li>
+                            <img src="assets/images/washroom.svg" alt="" />
+                            <span>1</span>
+                          </li>
+                          <li>
+                            <img src="assets/images/car.svg" alt="" />
+                            <span>3</span>
+                          </li>
+                          <li>
+                            <img src="assets/images/length.svg" alt="" />
+                            <span>40m <sup>2</sup></span>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </div>
-              <div
-                class="col-md-5 col-lg-3 mt-3"
-                data-aos="fade-up"
-                data-aos-duration="2000"
-              >
-                <a href="propetyDetails.html">
-                  <div class="card">
-                    <div class="card-box">
-                      <img
-                        src="assets/images/card-img.jpg"
-                        class="card-img"
-                        alt=""
-                      />
-                      <h1 class="card-price">700.00$</h1>
-                      <h5 class="card-title">House for rent</h5>
-                      <p class="card-para">
-                        lazimpat, kathmandu <br />
-                        26 November 2020
-                      </p>
-                      <ul class="card-feature-list">
-                        <li>
-                          <img src="assets/images/bed.svg" alt="" />
-                          <span>2</span>
-                        </li>
-                        <li>
-                          <img src="assets/images/washroom.svg" alt="" />
-                          <span>1</span>
-                        </li>
-                        <li>
-                          <img src="assets/images/car.svg" alt="" />
-                          <span>3</span>
-                        </li>
-                        <li>
-                          <img src="assets/images/length.svg" alt="" />
-                          <span>40m <sup>2</sup></span>
-                        </li>
-                      </ul>
+                  </a>
+                </div>
+                <div
+                  class="swiper-slide"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                >
+                  <a href="propetyDetails.html">
+                    <div class="card">
+                      <div class="card-box">
+                        <img
+                          src="assets/images/card-img.jpg"
+                          class="card-img"
+                          alt=""
+                        />
+                        <h1 class="card-price">700.00$</h1>
+                        <h5 class="card-title">House for rent</h5>
+                        <p class="card-para">
+                          lazimpat, kathmandu <br />
+                          26 November 2020
+                        </p>
+                        <ul class="card-feature-list">
+                          <li>
+                            <img src="assets/images/bed.svg" alt="" />
+                            <span>2</span>
+                          </li>
+                          <li>
+                            <img src="assets/images/washroom.svg" alt="" />
+                            <span>1</span>
+                          </li>
+                          <li>
+                            <img src="assets/images/car.svg" alt="" />
+                            <span>3</span>
+                          </li>
+                          <li>
+                            <img src="assets/images/length.svg" alt="" />
+                            <span>40m <sup>2</sup></span>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </div>
-              <div
-                class="col-md-5 col-lg-3 mt-3"
-                data-aos="fade-up"
-                data-aos-duration="2500"
-              >
-                <a href="propetyDetails.html">
-                  <div class="card">
-                    <div class="card-box">
-                      <img
-                        src="assets/images/card-img.jpg"
-                        class="card-img"
-                        alt=""
-                      />
-                      <h1 class="card-price">700.00$</h1>
-                      <h5 class="card-title">House for rent</h5>
-                      <p class="card-para">
-                        lazimpat, kathmandu <br />
-                        26 November 2020
-                      </p>
-                      <ul class="card-feature-list">
-                        <li>
-                          <img src="assets/images/bed.svg" alt="" />
-                          <span>2</span>
-                        </li>
-                        <li>
-                          <img src="assets/images/washroom.svg" alt="" />
-                          <span>1</span>
-                        </li>
-                        <li>
-                          <img src="assets/images/car.svg" alt="" />
-                          <span>3</span>
-                        </li>
-                        <li>
-                          <img src="assets/images/length.svg" alt="" />
-                          <span>40m <sup>2</sup></span>
-                        </li>
-                      </ul>
+                  </a>
+                </div>
+                <div
+                  class="swiper-slide"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                >
+                  <a href="propetyDetails.html">
+                    <div class="card">
+                      <div class="card-box">
+                        <img
+                          src="assets/images/card-img.jpg"
+                          class="card-img"
+                          alt=""
+                        />
+                        <h1 class="card-price">700.00$</h1>
+                        <h5 class="card-title">House for rent</h5>
+                        <p class="card-para">
+                          lazimpat, kathmandu <br />
+                          26 November 2020
+                        </p>
+                        <ul class="card-feature-list">
+                          <li>
+                            <img src="assets/images/bed.svg" alt="" />
+                            <span>2</span>
+                          </li>
+                          <li>
+                            <img src="assets/images/washroom.svg" alt="" />
+                            <span>1</span>
+                          </li>
+                          <li>
+                            <img src="assets/images/car.svg" alt="" />
+                            <span>3</span>
+                          </li>
+                          <li>
+                            <img src="assets/images/length.svg" alt="" />
+                            <span>40m <sup>2</sup></span>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </div>
-              <div
-                class="col-md-5 col-lg-3 mt-3"
-                data-aos="fade-up"
-                data-aos-duration="3000"
-              >
-                <a href="propetyDetails.html">
-                  <div class="card">
-                    <div class="card-box">
-                      <img
-                        src="assets/images/card-img.jpg"
-                        class="card-img"
-                        alt=""
-                      />
-                      <h1 class="card-price">700.00$</h1>
-                      <h5 class="card-title">House for rent</h5>
-                      <p class="card-para">
-                        lazimpat, kathmandu <br />
-                        26 November 2020
-                      </p>
-                      <ul class="card-feature-list">
-                        <li>
-                          <img src="assets/images/bed.svg" alt="" />
-                          <span>2</span>
-                        </li>
-                        <li>
-                          <img src="assets/images/washroom.svg" alt="" />
-                          <span>1</span>
-                        </li>
-                        <li>
-                          <img src="assets/images/car.svg" alt="" />
-                          <span>3</span>
-                        </li>
-                        <li>
-                          <img src="assets/images/length.svg" alt="" />
-                          <span>40m <sup>2</sup></span>
-                        </li>
-                      </ul>
+                  </a>
+                </div>
+                <div
+                  class="swiper-slide"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                >
+                  <a href="propetyDetails.html">
+                    <div class="card">
+                      <div class="card-box">
+                        <img
+                          src="assets/images/card-img.jpg"
+                          class="card-img"
+                          alt=""
+                        />
+                        <h1 class="card-price">700.00$</h1>
+                        <h5 class="card-title">House for rent</h5>
+                        <p class="card-para">
+                          lazimpat, kathmandu <br />
+                          26 November 2020
+                        </p>
+                        <ul class="card-feature-list">
+                          <li>
+                            <img src="assets/images/bed.svg" alt="" />
+                            <span>2</span>
+                          </li>
+                          <li>
+                            <img src="assets/images/washroom.svg" alt="" />
+                            <span>1</span>
+                          </li>
+                          <li>
+                            <img src="assets/images/car.svg" alt="" />
+                            <span>3</span>
+                          </li>
+                          <li>
+                            <img src="assets/images/length.svg" alt="" />
+                            <span>40m <sup>2</sup></span>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                </div>
+                <div
+                  class="swiper-slide"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                >
+                  <a href="propetyDetails.html">
+                    <div class="card">
+                      <div class="card-box">
+                        <img
+                          src="assets/images/card-img.jpg"
+                          class="card-img"
+                          alt=""
+                        />
+                        <h1 class="card-price">700.00$</h1>
+                        <h5 class="card-title">House for rent</h5>
+                        <p class="card-para">
+                          lazimpat, kathmandu <br />
+                          26 November 2020
+                        </p>
+                        <ul class="card-feature-list">
+                          <li>
+                            <img src="assets/images/bed.svg" alt="" />
+                            <span>2</span>
+                          </li>
+                          <li>
+                            <img src="assets/images/washroom.svg" alt="" />
+                            <span>1</span>
+                          </li>
+                          <li>
+                            <img src="assets/images/car.svg" alt="" />
+                            <span>3</span>
+                          </li>
+                          <li>
+                            <img src="assets/images/length.svg" alt="" />
+                            <span>40m <sup>2</sup></span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </a>
+                </div>
               </div>
+              <div class="swiper-button-next swiper-main-next"></div>
+              <div class="swiper-button-prev swiper-main-prev"></div>
+              <!-- <div class="swiper-pagination"></div> -->
             </div>
           </div>
         </div>
@@ -275,165 +327,135 @@
             <button class="btn section__btn">All</button>
           </div>
           <div class="roomList__inner">
-            <div class="row justify-content-center gx-lg-5 gx-2">
-              <div
-                class="col-md-5 col-lg-3 mt-3"
-                data-aos="fade-up"
-                data-aos-duration="1500"
-              >
-                <a href="propetyDetails.html">
-                  <div class="card">
-                    <div class="card-box">
-                      <img
-                        src="assets/images/card-img1.jpg"
-                        class="card-img"
-                        alt=""
-                      />
-                      <h1 class="card-price">900.00$</h1>
-                      <h5 class="card-title">House for rent</h5>
-                      <p class="card-para">
-                        lazimpat, kathmandu <br />
-                        26 November 2020
-                      </p>
-                      <ul class="card-feature-list">
-                        <li>
-                          <img src="assets/images/bed.svg" alt="" />
-                          <span>2</span>
-                        </li>
-                        <li>
-                          <img src="assets/images/washroom.svg" alt="" />
-                          <span>1</span>
-                        </li>
-                        <li>
-                          <img src="assets/images/car.svg" alt="" />
-                          <span>3</span>
-                        </li>
-                        <li>
-                          <img src="assets/images/length.svg" alt="" />
-                          <span>40m <sup>2</sup></span>
-                        </li>
-                      </ul>
+            <div class="swiper mySwiper swiper-main">
+              <div class="swiper-wrapper h-100">
+                <div
+                  class="swiper-slide"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                >
+                  <a href="propetyDetails.html">
+                    <div class="card">
+                      <div class="card-box">
+                        <img
+                          src="assets/images/card-img1.jpg"
+                          class="card-img"
+                          alt=""
+                        />
+                        <h1 class="card-price">900.00$</h1>
+                        <h5 class="card-title">House for rent</h5>
+                        <p class="card-para">
+                          lazimpat, kathmandu <br />
+                          26 November 2020
+                        </p>
+                        <ul class="card-feature-list">
+                          <li>
+                            <img src="assets/images/bed.svg" alt="" />
+                            <span>2</span>
+                          </li>
+                          <li>
+                            <img src="assets/images/washroom.svg" alt="" />
+                            <span>1</span>
+                          </li>
+                          <li>
+                            <img src="assets/images/car.svg" alt="" />
+                            <span>3</span>
+                          </li>
+                          <li>
+                            <img src="assets/images/length.svg" alt="" />
+                            <span>40m <sup>2</sup></span>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </div>
-              <div
-                class="col-md-5 col-lg-3 mt-3"
-                data-aos="fade-up"
-                data-aos-duration="2000"
-              >
-                <div class="card">
-                  <div class="card-box">
-                    <img
-                      src="assets/images/card-img1.jpg"
-                      class="card-img"
-                      alt=""
-                    />
-                    <h1 class="card-price">900.00$</h1>
-                    <h5 class="card-title">House for rent</h5>
-                    <p class="card-para">
-                      lazimpat, kathmandu <br />
-                      26 November 2020
-                    </p>
-                    <ul class="card-feature-list">
-                      <li>
-                        <img src="assets/images/bed.svg" alt="" />
-                        <span>2</span>
-                      </li>
-                      <li>
-                        <img src="assets/images/washroom.svg" alt="" />
-                        <span>1</span>
-                      </li>
-                      <li>
-                        <img src="assets/images/car.svg" alt="" />
-                        <span>3</span>
-                      </li>
-                      <li>
-                        <img src="assets/images/length.svg" alt="" />
-                        <span>40m <sup>2</sup></span>
-                      </li>
-                    </ul>
-                  </div>
+                  </a>
+                </div>
+                <div
+                  class="swiper-slide"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                >
+                  <a href="propetyDetails.html">
+                    <div class="card">
+                      <div class="card-box">
+                        <img
+                          src="assets/images/card-img1.jpg"
+                          class="card-img"
+                          alt=""
+                        />
+                        <h1 class="card-price">900.00$</h1>
+                        <h5 class="card-title">House for rent</h5>
+                        <p class="card-para">
+                          lazimpat, kathmandu <br />
+                          26 November 2020
+                        </p>
+                        <ul class="card-feature-list">
+                          <li>
+                            <img src="assets/images/bed.svg" alt="" />
+                            <span>2</span>
+                          </li>
+                          <li>
+                            <img src="assets/images/washroom.svg" alt="" />
+                            <span>1</span>
+                          </li>
+                          <li>
+                            <img src="assets/images/car.svg" alt="" />
+                            <span>3</span>
+                          </li>
+                          <li>
+                            <img src="assets/images/length.svg" alt="" />
+                            <span>40m <sup>2</sup></span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="swiper-slide"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                >
+                  <a href="propetyDetails.html">
+                    <div class="card">
+                      <div class="card-box">
+                        <img
+                          src="assets/images/card-img1.jpg"
+                          class="card-img"
+                          alt=""
+                        />
+                        <h1 class="card-price">900.00$</h1>
+                        <h5 class="card-title">House for rent</h5>
+                        <p class="card-para">
+                          lazimpat, kathmandu <br />
+                          26 November 2020
+                        </p>
+                        <ul class="card-feature-list">
+                          <li>
+                            <img src="assets/images/bed.svg" alt="" />
+                            <span>2</span>
+                          </li>
+                          <li>
+                            <img src="assets/images/washroom.svg" alt="" />
+                            <span>1</span>
+                          </li>
+                          <li>
+                            <img src="assets/images/car.svg" alt="" />
+                            <span>3</span>
+                          </li>
+                          <li>
+                            <img src="assets/images/length.svg" alt="" />
+                            <span>40m <sup>2</sup></span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </a>
                 </div>
               </div>
-              <div
-                class="col-md-5 col-lg-3 mt-3"
-                data-aos="fade-up"
-                data-aos-duration="2500"
-              >
-                <div class="card">
-                  <div class="card-box">
-                    <img
-                      src="assets/images/card-img1.jpg"
-                      class="card-img"
-                      alt=""
-                    />
-                    <h1 class="card-price">900.00$</h1>
-                    <h5 class="card-title">House for rent</h5>
-                    <p class="card-para">
-                      lazimpat, kathmandu <br />
-                      26 November 2020
-                    </p>
-                    <ul class="card-feature-list">
-                      <li>
-                        <img src="assets/images/bed.svg" alt="" />
-                        <span>2</span>
-                      </li>
-                      <li>
-                        <img src="assets/images/washroom.svg" alt="" />
-                        <span>1</span>
-                      </li>
-                      <li>
-                        <img src="assets/images/car.svg" alt="" />
-                        <span>3</span>
-                      </li>
-                      <li>
-                        <img src="assets/images/length.svg" alt="" />
-                        <span>40m <sup>2</sup></span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col-md-5 col-lg-3 mt-3"
-                data-aos="fade-up"
-                data-aos-duration="3000"
-              >
-                <div class="card">
-                  <div class="card-box">
-                    <img
-                      src="assets/images/card-img1.jpg"
-                      class="card-img"
-                      alt=""
-                    />
-                    <h1 class="card-price">900.00$</h1>
-                    <h5 class="card-title">House for rent</h5>
-                    <p class="card-para">
-                      lazimpat, kathmandu <br />
-                      26 November 2020
-                    </p>
-                    <ul class="card-feature-list">
-                      <li>
-                        <img src="assets/images/bed.svg" alt="" />
-                        <span>2</span>
-                      </li>
-                      <li>
-                        <img src="assets/images/washroom.svg" alt="" />
-                        <span>1</span>
-                      </li>
-                      <li>
-                        <img src="assets/images/car.svg" alt="" />
-                        <span>3</span>
-                      </li>
-                      <li>
-                        <img src="assets/images/length.svg" alt="" />
-                        <span>40m <sup>2</sup></span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+              <div class="swiper-button-next swiper-main-next"></div>
+              <div class="swiper-button-prev swiper-main-prev"></div>
+              <!-- <div class="swiper-pagination"></div> -->
             </div>
           </div>
         </div>
@@ -572,17 +594,21 @@
     <footer id="footer">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 text-center text-md-start text-lg-start text-xl-start text-xxl-start">
+          <div
+            class="col-md-6 text-center text-md-start text-lg-start text-xl-start text-xxl-start"
+          >
             <h3>Copyright© 2022 TBD app, All rights reserved.</h3>
           </div>
-          <div class="col-md-6 text-center text-md-start text-lg-start text-xl-start text-xxl-start">
-             <div class="footer_menu">
+          <div
+            class="col-md-6 text-center text-md-start text-lg-start text-xl-start text-xxl-start"
+          >
+            <div class="footer_menu">
               <ul class="d-flex align-items-center flex-wrap">
                 <li><a href="">Terms and Conditions</a></li>
                 <li><a href="">Privacy Policy</a></li>
                 <li><a href="">Help and Supports</a></li>
               </ul>
-             </div>
+            </div>
           </div>
         </div>
       </div>
@@ -594,6 +620,9 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="assets/js/jquery.js"></script>
     <script src="assets/js/main.js"></script>

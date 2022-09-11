@@ -17,11 +17,11 @@ body {
     height: auto;
 }
 body::-webkit-scrollbar {
-    width: .75rem;
+    width: 0.75rem;
     z-index: 9999999;
     &-track {
         background: #f1f1f1;
-      }
+    }
     &-thumb {
         background-color: $color_grey;
         outline: 1px solid transparent;
@@ -233,4 +233,54 @@ button {
             outline: none;
         }
     }
+}
+
+// .swiper-pagination {
+//     &-bullet {
+//         background-color: transparent;
+//         border: 2px solid $color_grey;
+//         border-radius: 50%;
+//         width: 12px;
+//         height: 12px;
+//         opacity: 1;
+//     }
+
+//     &-bullet-active {
+//         background-color: $color_green;
+//     }
+// }
+
+.swiper-button-next,
+.swiper-button-prev {
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    margin-top: 0;
+    background-color: $color_grey;
+    border-radius: 50%;
+    z-index: 999;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        background-color: $color_green;
+    }
+}
+
+.swiper-main-next::after,
+.swiper-main-prev::after {
+    color: #fff;
+    font-size: 12px;
+}
+
+.swiper-main-next {
+    transform: translate(50%, -50%);
+    //   right: calc((100% - var(--swiper-width)) / 2);
+}
+
+.swiper-main-prev {
+    transform: translate(-50%, -50%);
+    //   left: calc((100% - var(--swiper-width)) / 2);
+}
+
+.swiper-main {
+    overflow: visible !important;
 }
